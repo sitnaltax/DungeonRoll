@@ -1,0 +1,47 @@
+/* 
+    Created on : Mar 18, 2014, 11:45:46 PM
+    Author     : Rob
+*/
+
+.whiteDie {
+    width: 40px;
+    height: 40px;
+}
+
+#masthead {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    height: 100px;
+    width: 100%;
+    background-color: #0033ff
+}
+
+#statusArea{
+    position: absolute;
+    left: 0px;
+    top: 100px;
+    width: 20%;
+    height: 100%;
+    background-color: #ff0000;
+}
+
+#playArea {
+    position: absolute;
+    left: 20%;
+    top: 100px;
+    width: 60%;
+    min-width: 100px;
+    height: 100%;
+    background-color: #ffff00;
+}
+
+#logArea {
+    position: absolute;
+    left: 80%;
+    top: 100px;
+    width: 20%;
+    height: 100%;
+    background-color: #00cc33;
+    overflow-y: scroll;
+}
