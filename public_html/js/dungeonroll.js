@@ -85,7 +85,12 @@ var AppView = Backbone.View.extend({
 	
 	render: function() {
             this.phaseDisplay.html(this.phaseTemplate(GameState.toJSON()));
-
+            if (GameState.get("phase") % 2 === 0) {
+                this.$("#remove-button").hide();
+            }
+            else {
+                this.$("#remove-button").show();
+            }
 	},
 	
 	addDie: function() {
