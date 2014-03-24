@@ -22,16 +22,17 @@ and open the template in the editor.
 
                 <div id="playArea">
                     <header id="header">
-                            <h1>Dice</h1>
-                            <span class="hello">
-                                    <label>Hello</label>
-                            </span>
-                            <div id="dice-area">
-                            </div>
+                        <h1>Dice</h1>
+                        <div id="phaseDisplay">
+                            <h3>Unknown Phase</h3>
+                        </div>
+                        <div id="dice-area">
+                        </div>
                     </header>
                     <div id="controls">
-                            <button class="add" id="add-button">Add</button>
-                            <button class="remove" id="remove-button">Remove</button>			
+                        <button class="add" id="add-button">Add</button>
+                        <button class="remove" id="remove-button">Remove</button>
+                        <button class="advance-phase" id="advance-phase-button">Advance Phase</button>	
                     </div>
                 </div>
 
@@ -42,7 +43,10 @@ and open the template in the editor.
 
 		
             <script type="text/template" id="die-template">
-                    <img class="whiteDie <%- face %>" src="<%- graphic %>"/>
+                <img class="whiteDie <%- face %>" src="<%- graphic %>"/>
+            </script>
+            <script type="text/template" id="phase-template">
+                <h3>Phase <%- phase %></h3>
             </script>
 
             <script src="js/jquery-2.1.0.js"></script>
